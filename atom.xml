@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fanxianren.cn</id>
     <title>Hve Notes</title>
-    <updated>2019-08-09T17:08:00.679Z</updated>
+    <updated>2019-09-01T04:42:01.551Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fanxianren.cn"/>
     <link rel="self" href="https://fanxianren.cn/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://fanxianren.cn/images/avatar.png</logo>
     <icon>https://fanxianren.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, Hve Notes</rights>
+    <entry>
+        <title type="html"><![CDATA[单片机资源]]></title>
+        <id>https://fanxianren.cn/post/dan-pian-ji-zi-yuan</id>
+        <link href="https://fanxianren.cn/post/dan-pian-ji-zi-yuan">
+        </link>
+        <updated>2019-09-01T04:40:59.000Z</updated>
+        <content type="html"><![CDATA[<p>https://wp.learning.ac.cn</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Hve Notes]]></title>
         <id>https://fanxianren.cn/post/hello-hve-notes</id>
