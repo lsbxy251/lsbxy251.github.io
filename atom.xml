@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ygydpj.learning.ac.cn</id>
     <title>豫工院单片机</title>
-    <updated>2019-09-06T14:53:25.448Z</updated>
+    <updated>2019-09-06T15:21:13.757Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ygydpj.learning.ac.cn"/>
     <link rel="self" href="https://ygydpj.learning.ac.cn/atom.xml"/>
@@ -17,11 +17,11 @@
         </link>
         <updated>2019-09-06T13:43:05.000Z</updated>
         <summary type="html"><![CDATA[<ol>
-<li>在AT89S51单片机的片内数据存储器中，地址为00H<sub>1FH的32个单元是四组通用工作寄存器区，每个区包含8B的工作寄存器，编号为R7</sub>R0；</li>
+<li>在AT89S51单片机的片内数据存储器中，地址为00H~1FH的32个单元是四组通用工作寄存器区，每个区包含8B的工作寄存器，编号为R7~R0；</li>
 </ol>
 ]]></summary>
         <content type="html"><![CDATA[<ol>
-<li>在AT89S51单片机的片内数据存储器中，地址为00H<sub>1FH的32个单元是四组通用工作寄存器区，每个区包含8B的工作寄存器，编号为R7</sub>R0；</li>
+<li>在AT89S51单片机的片内数据存储器中，地址为00H~1FH的32个单元是四组通用工作寄存器区，每个区包含8B的工作寄存器，编号为R7~R0；</li>
 </ol>
 <!-- more -->
 <ol start="2">
@@ -30,6 +30,9 @@
 <li>当前工作寄存器组的区号由程序状态字寄存器PSW中的RS1、RS0决定，用户可通过改变这两位值来切换选择当前的工作寄存器组；</li>
 <li>RS1、RS0、当前的工作寄存器区的区号、当前的工作寄存器区的地址范围，各编号对应的字节地址的地址关系如下表所示：<br>
 <img src="https://ygydpj.learning.ac.cn/post-images/1567781564447.jpg" alt=""></li>
+<li>RS1值可能是0或1，RS0的值也可能是0或1，将RS1作为高位，RS0作为低位，则可以组合成四个二进制数00、01、10和11，将其转换成十进制数，即为当前的工作寄存器区的区号；</li>
+<li>假设当前的工作寄存器区的区号为x，则其字节地址的范围为8x~8x+7;</li>
+<li>假设当前的工作寄存器区的区号为x，则Rn的字节地址为：8x+n，n=0...7;</li>
 </ol>
 ]]></content>
     </entry>
