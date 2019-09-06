@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ygydpj.learning.ac.cn</id>
     <title>豫工院单片机</title>
-    <updated>2019-09-06T15:21:13.757Z</updated>
+    <updated>2019-09-06T16:11:45.426Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ygydpj.learning.ac.cn"/>
     <link rel="self" href="https://ygydpj.learning.ac.cn/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://ygydpj.learning.ac.cn/images/avatar.png</logo>
     <icon>https://ygydpj.learning.ac.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, 豫工院单片机</rights>
+    <entry>
+        <title type="html"><![CDATA[字节地址和位地址之间的相互换算]]></title>
+        <id>https://ygydpj.learning.ac.cn/post/zi-jie-di-zhi-he-wei-di-zhi-zhi-jian-de-xiang-hu-huan-suan</id>
+        <link href="https://ygydpj.learning.ac.cn/post/zi-jie-di-zhi-he-wei-di-zhi-zhi-jian-de-xiang-hu-huan-suan">
+        </link>
+        <updated>2019-09-06T15:22:09.000Z</updated>
+        <summary type="html"><![CDATA[<ol>
+<li>字节地址和位地址之间的换算主要涉及到表1（教材P26表2-5）和表2（教材P26表2-6）。</li>
+</ol>
+]]></summary>
+        <content type="html"><![CDATA[<ol>
+<li>字节地址和位地址之间的换算主要涉及到表1（教材P26表2-5）和表2（教材P26表2-6）。</li>
+</ol>
+<!-- more -->
+<p>表1如下：<br>
+<img src="https://ygydpj.learning.ac.cn/post-images/1567783852620.jpg" alt=""><br>
+表2如下：<br>
+<img src="https://ygydpj.learning.ac.cn/post-images/1567783909447.jpg" alt=""><br>
+2. 对于表1来说：<br>
+ （1） 所有的字节地址的高一位都是2；<br>
+ （2） 位地址只与字节地址的低一位有关，而与高一位“2”无关；<br>
+ （3） 已知字节地址求位地址的方法是：位地址的高一位是字节地址的低一位除以2的商，低一位则与字节地址的低一位除以2的余数有关：<br>
+      1） 当余数为0时，位地址的低一位的值是0~7,第n位的位地址的低一位的值是n，n=0...7；<br>
+     	2）当余数为1时，位地址的低一位的值是8~F,第n位的位地址的低一位的值是8+n，n=0...7；<br>
+ （4）已知位地址求取字节地址的方法是：<br>
+      1）字节地址的高一位直接是“2”；<br>
+      2）设位地址的高一位是x，如果其低一位为0~7，则字节地址的低一位是2x，否则，字节地址的低一位是2x+1；<br>
+3. 对于表2来说:<br>
+ （1） 假设字节地址是xx，则位地址的范围为：xx~xx+7,第n位的地址是xx+n，n=0...7;<br>
+ （2）  如果位地址的低一位小于8，则将位地址的低一位变为0即是其对应的字节地址；<br>
+ （3）  如果位地址的低一位不小于8，则将位地址的低一位变为8即是其对应的字节地址；<br>
+4. 采用表1或表2对应的方法取决于字节地址或位地址是否大于7FH；大于7FH，采用表2对应的方法，否则采用表1对应的方法；<br>
+5. 换算时，所给的地址是字节地址还是位地址是已知的，不会给一个地址，让我们判断其是字节地址还是位地址；</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[通用工作寄存器组的选择与使用]]></title>
         <id>https://ygydpj.learning.ac.cn/post/tong-yong-gong-zuo-ji-cun-qi-zu-de-xuan-ze-yu-shi-yong</id>

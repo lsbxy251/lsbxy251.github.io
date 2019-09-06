@@ -2,7 +2,7 @@
 <html lang="zh-CN">
  <head>
      <meta charset="utf-8" />
-  <title>通用工作寄存器组的选择与使用 | 豫工院单片机</title>
+  <title>关于 | 豫工院单片机</title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <link rel="stylesheet" href="https://ygydpj.learning.ac.cn/styles/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -77,35 +77,18 @@
      <div class="post-page">
       <div class="post animated fadeInDown">
        <div class="post-title">
-        <h3><a>通用工作寄存器组的选择与使用</a></h3>
+        <h3><a>关于</a></h3>
        </div>
        <div class="post-content">
-        <ol>
-<li>在AT89S51单片机的片内数据存储器中，地址为00H~1FH的32个单元是四组通用工作寄存器区，每个区包含8B的工作寄存器，编号为R7~R0；</li>
-</ol>
-<!-- more -->
-<ol start="2">
-<li>在<strong>同一时刻</strong>，只有一组工作寄存器区作为当前的工作寄存器区被使用；</li>
-<li>无论当前使用的是哪一组工作寄存器区，其<strong>编号都是R7~R0</strong>，各个编号对应的字节地址<em>取决于</em>当前的工作寄存器区的<strong>区号</strong>；</li>
-<li>当前工作寄存器组的区号由程序状态字寄存器PSW中的RS1、RS0决定，用户可通过改变这两位值来切换选择当前的工作寄存器组；</li>
-<li>RS1、RS0、当前的工作寄存器区的区号、当前的工作寄存器区的地址范围，各编号对应的字节地址的地址关系如下表所示：<br>
-<img src="https://ygydpj.learning.ac.cn/post-images/1567781564447.jpg" alt=""></li>
-<li>RS1值可能是0或1，RS0的值也可能是0或1，将RS1作为高位，RS0作为低位，则可以组合成四个二进制数00、01、10和11，将其转换成十进制数，即为当前的工作寄存器区的区号；</li>
-<li>假设当前的工作寄存器区的区号为x，则其字节地址的范围为8x~8x+7;</li>
-<li>假设当前的工作寄存器区的区号为x，则Rn的字节地址为：8x+n，n=0...7;</li>
-</ol>
+        <p>这是关于的页面，可以在这里向世界介绍你！</p>
 
        </div>
        <div class="post-footer">
         <div class="meta">
          <div class="info">
           <i class="fa fa-sun-o"></i>
-          <span class="date">2019-09-06</span>
+          <span class="date">2019-01-25</span>
           <i class="fa fa-tag"></i>
-          
-          <a class="tag" href="https://ygydpj.learning.ac.cn/tag/3_FzugP8d" title="第二章">第二章 </a>
-          
-          <a class="tag" href="https://ygydpj.learning.ac.cn/tag/l3nEt8EI7" title="答疑">答疑 </a>
           
          </div>
         </div>
@@ -119,14 +102,12 @@
         <a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a>
        </div>
        <div class="twitter">
-        <a class="fa fa-twitter" href="http://twitter.com/home?status=,https://ygydpj.learning.ac.cn/post/tong-yong-gong-zuo-ji-cun-qi-zu-de-xuan-ze-yu-shi-yong,;"></a>
+        <a class="fa fa-twitter" href="http://twitter.com/home?status=,https://ygydpj.learning.ac.cn/post/about,;"></a>
        </div>
       </div>
       <div class="pagination">
        <ul class="clearfix">
 
-        <li class="pre pagbuttons"><a class="btn" role="navigation" href="https://ygydpj.learning.ac.cn/post/zi-jie-di-zhi-he-wei-di-zhi-zhi-jian-de-xiang-hu-huan-suan" title="字节地址和位地址之间的相互换算">上一篇</a></li>
-         
         
        </ul>
       </div>
