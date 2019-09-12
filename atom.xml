@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ygydpj.learning.ac.cn</id>
     <title>豫工院单片机</title>
-    <updated>2019-09-06T16:52:17.539Z</updated>
+    <updated>2019-09-12T15:27:22.189Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ygydpj.learning.ac.cn"/>
     <link rel="self" href="https://ygydpj.learning.ac.cn/atom.xml"/>
@@ -10,6 +10,36 @@
     <logo>https://ygydpj.learning.ac.cn/images/avatar.png</logo>
     <icon>https://ygydpj.learning.ac.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, 豫工院单片机</rights>
+    <entry>
+        <title type="html"><![CDATA[I/O端口特点及用法的总结]]></title>
+        <id>https://ygydpj.learning.ac.cn/post/io-duan-kou-te-dian-ji-yong-fa-de-zong-jie</id>
+        <link href="https://ygydpj.learning.ac.cn/post/io-duan-kou-te-dian-ji-yong-fa-de-zong-jie">
+        </link>
+        <updated>2019-09-12T15:04:40.000Z</updated>
+        <summary type="html"><![CDATA[<ol>
+<li><strong>4个</strong>8位并行I/O口：P0口、P1口、P2口和P3口，共32位；</li>
+</ol>
+]]></summary>
+        <content type="html"><![CDATA[<ol>
+<li><strong>4个</strong>8位并行I/O口：P0口、P1口、P2口和P3口，共32位；</li>
+</ol>
+<!-- more -->
+<ol start="2">
+<li>四个并行I/O口都可以实现<strong>输入</strong>和<strong>输出</strong>功能；</li>
+<li>四个并行I/O口都既可以按<strong>字节</strong>寻址，又可以实现<strong>按位</strong>寻址；</li>
+<li>P0可作数据口；</li>
+<li>P0作地址的低8位，P2口作地址的高8位，共同组成16位地址，可实现最大寻址范围为64KB（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>16</mn></msup></mrow><annotation encoding="application/x-tex">2^{16}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span></span>）;</li>
+<li>P0口作地址口时，为真双向口（高电平、低电平和高阻抗三个状态），P0口作普通I/O口时、P1口、P2口和P3口是准双向口（高电平和低电平两个状态）；</li>
+<li>P0口作I/O口，需要外接上拉电阻；</li>
+<li>P3口有第二功能；</li>
+<li>只有P1口是单一功能I/O口；</li>
+<li>P0口可接8个TTL负载，P1口、P2口和P3口可接4个TTL负载；</li>
+<li>在读引脚时，必须先对相应位对应的锁存器写“1”；</li>
+<li>P2口作为高8位地址口时，输出锁存器的内容保持不变；</li>
+<li>在外扩存储器和I/O口时，P0口作地址/数据口，P2口作地址口，其余情况才作普通I/O口；</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[计算机中的数]]></title>
         <id>https://ygydpj.learning.ac.cn/post/ji-suan-ji-zhong-de-shu</id>
